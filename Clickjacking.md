@@ -118,7 +118,7 @@
 **-> Initially, enter random values in the input fields and submit the feedback. It was observed that a message is displayed containing the value entered in the Name field** <br>
 <img width="570" height="131" alt="image" src="https://github.com/user-attachments/assets/d485b104-7bac-477f-9aa0-8cfa129ada8e" /><br>
 **-> Let's inject the XSS script of alert and check whether is it able to execute it or not..** <br>
-<img width="742" height="600 alt="Screenshot 2026-09-07 222150" src="https://github.com/user-attachments/assets/817e9be8-ab9c-4923-a721-2d8720194fd8" /><br>
+<img width="816" height="655" alt="Screenshot 2026-09-07 222150" src="https://github.com/user-attachments/assets/0e60fee2-1434-4e69-b984-b30585a82630" /><br>
 **-> After submiting the result we obtained tells that it is vulnerable to DOM XSS** <br>
 <img width="742" height="462" alt="image" src="https://github.com/user-attachments/assets/eb8defad-b286-4035-a878-3c3aab321b65" /><br>
 **-> we need to fill the input field with a value automatically before the user enters anything by adding the parameter to the URL and then load that URL inside the iframe and the script is injected in the "name" parameter**<br>
