@@ -108,4 +108,15 @@
 **-> The target webpage containing the “Update email” option is hidden underneath the visible “Click here” decoy. When the user clicks the decoy, the click is actually registered on the hidden “Update email” control, causing the email address to be changed without the user's awareness**<br>
 ### The lab is solved ✅<br><br>
 
+## LAB-4: Exploiting clickjacking vulnerability to trigger DOM-based XSS
+<img width="1160" height="346" alt="image" src="https://github.com/user-attachments/assets/24fc6230-608d-4f70-884c-ad5d6fff85fc" /><br>
+### GOAL:
+**First,We need to identify where the application is vulnerable to XSS and inject a script that calls window.print() Then, use this vulnerable page in a clickjacking attack so that, after the victim submits the feedback form, the injected script triggers the print dialog.** <br>
+### Soln:
+**->After accessing the lab, click on ‘Submit feedback’. A webpage is displayed containing input fields for Name, Email, Subject, and Message, along with a button to submit the feedback** <br>
+**-> Initially, enter random values in the input fields and submit the feedback. It was observed that a message is displayed containing the value entered in the Name field** <br>
+**-> 
+
+
+
 
