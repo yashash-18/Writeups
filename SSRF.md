@@ -1,0 +1,6 @@
+## SSRF
+### LAB-1: Basic SSRF against the local server
+### GOAL:
+**This lab has a stock check feature which fetches data from an internal system.** <br>
+**To solve the lab, change the stock check URL to access the admin interface at ```http://localhost/admin``` and delete the user ```carlos```** <br>
+
