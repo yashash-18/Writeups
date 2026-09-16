@@ -37,7 +37,13 @@
 **-> After accessing the lab view details of either of the item and we can see a option like ```check stock``` which fetches data from an internal system.** <br>
 **-> Now copy the request and inspect it in the "burpsuite" and turn on the ```intercept``` and then click on "check stock" and now send the request to ```repeater```  and try the url that was mentioned ```http://127.0.0.1/admin```** <br>
 **-> It displays that ```External stock check blocked for security reasons``` which means that it is blocking "127.0.0.1" so we need to bypass that first**<br>
-**-> We can use "127.1" to bypass it and then check the response..** <br>
+<img width="1242" height="377" alt="image" src="https://github.com/user-attachments/assets/6382d804-a371-4229-93ad-4708853fb533" /><br>
+**-> We can use "127.1" instead of 127.0.0.1 and then check the response... and observed that it return ```200``` ok which has been bypassed** <br>
+**-> Now try inserting ```http://127.1/admin``` which still blocks i.e, it blocks /admin.. but as we read that "Obfuscate blocked strings using URL encoding or case variation" which means that "A character can be represented using its percent-encoded form"(/%61->a i.e, /%61dmin) or "Case Variation" which mean we can change "capitalization"(/Admin or /ADMIN)** <br>
+<img width="1526" height="396" alt="image" src="https://github.com/user-attachments/assets/242549b4-9229-40ea-9ba6-05ef1aedd3ab" /><br>
+**-> After inserting ```http://127.1/Admin``` it return ```200 ok``` and we can observe the admin interface.. and now insert ```http://127.1/Admin/delete?username=carlos```** <br>
+**-> The user got deleted and the lab is solved✅** <br><br>
+
 
 
 
