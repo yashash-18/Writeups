@@ -38,6 +38,20 @@
 **-> Now run ```/challenge/run``` and get the flag** <br>
 <img width="1335" height="385" alt="image" src="https://github.com/user-attachments/assets/41184f95-af6a-49c8-b7f0-c71f04ae4fc2" /><br><br>
 
+## Position thy self
+### GOAL:
+**We need to execute the ```/challenge/run``` program from a specific path (which it will tell us). we need to do ```cd``` to that directory before rerunning the challenge program and then get the flag** <br>
+**i.e, First we need to find the specific path and then execute it and get the flag** <br>
+### Soln:
+**-> First check in which directory u are... and if u are not in ```/``` root directory then navigate there using ```cd ../..```** <br>
+**-> Now just try running ```/challenge/run``` and observed a path and now navigate there and try executing it and get the flag** <br>
+<img width="1342" height="657" alt="image" src="https://github.com/user-attachments/assets/a3dfb18f-8502-4572-9ef0-1664b8a4a599" /><br><br>
+
+
+
+
+
+
 
 
 
