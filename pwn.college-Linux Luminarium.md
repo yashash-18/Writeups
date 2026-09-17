@@ -29,6 +29,16 @@
 **-> It says that ```pwn``` is not a directory it contains bash script.. so try running as ```./pwn``` and get the flag** <br>
 <img width="1342" height="582" alt="image" src="https://github.com/user-attachments/assets/2170039f-e730-418b-8584-f4de5c778aec" /><br><br>
 
+## Program and Absolute Paths
+### GOAL:
+**We want to execute the ```run``` file that is in the ```challenge``` directory that is, in turn, in the ```/``` directory. If we invoke the challenge correctly, it will give you the flag.** <br>
+**i.e, From the ```/``` root directory execute ```/challenge/run``` as mentioned and get the flag** <br>
+### Soln:
+**-> First check in which directory u are... and if u are not in ```/``` root directory then navigate there using ```cd ../..```** <br>
+**-> Now run ```/challenge/run``` and get the flag** <br>
+<img width="1335" height="385" alt="image" src="https://github.com/user-attachments/assets/41184f95-af6a-49c8-b7f0-c71f04ae4fc2" /><br><br>
+
+
 
 
 
