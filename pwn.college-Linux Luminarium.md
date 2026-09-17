@@ -23,6 +23,12 @@
 # Pondering Paths
 ## The Root
 ### GOAL:
+**In this challenge, the flag is located at a specific path, which is provided in the challenge description. Simply navigate to that path and retrieve the flag.** <br>
+### Soln:
+**-> First check in which directory u are... and if u are not in ```/``` root directory then navigate there using ```cd ../..```** <br>
+**-> It says that ```pwn``` is not a directory it contains bash script.. so try running as ```./pwn``` and get the flag** <br>
+<img width="1342" height="582" alt="image" src="https://github.com/user-attachments/assets/2170039f-e730-418b-8584-f4de5c778aec" /><br><br>
+
 
 
 
