@@ -48,6 +48,27 @@
 <img width="1342" height="657" alt="image" src="https://github.com/user-attachments/assets/a3dfb18f-8502-4572-9ef0-1664b8a4a599" /><br><br>
 
 ## Position elsewhere
+### GOAL:
+**Same as the above but just it is being repeated 5 times** <br>
+**i.e, Just find all the paths and at one specific path get the flag** <br>
+### Soln:
+**-> First check in which directory u are... and if u are not in ```/``` root directory then navigate there using ```cd ../..```** <br>
+**-> Run ```/challenge/run``` and get the path which repeats for 5 times and then get the flag**<br>
+<img width="802" height="620" alt="image" src="https://github.com/user-attachments/assets/ca883431-71d7-4bc1-b144-84446a6379d4" /><br><br>
+
+## Implicit relative paths, from /
+### GOAL:
+**First we need to change our current working directory to ```/``` Then invoke ```/challenge/run``` using a relative path. but For this level, the relative path starts with the letter c** <br>
+**So we need to find the relative path and then executes it** <br>
+### Soln:
+**-> First check in which directory u are... and if u are not in ```/``` root directory then navigate there using ```cd ../..```** <br>
+**-> As they mentioned that the relative path starts with "c" i.e, if we want to access a file in ```/tmp/a/b``` and our cwd is ```/``` so the relative path is ```tmp/a/b```** <br> 
+**-> Generally we try to run ```/challenge/run``` in root directory right but as they mentioned about relative path so now try running it with but without ```/```** <br>
+<img width="1197" height="781" alt="image" src="https://github.com/user-attachments/assets/ce512318-9e37-4dd1-af6e-edf1dc88031a" /><br><br>
+
+
+
+
 
 
 
