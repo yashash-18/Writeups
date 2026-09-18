@@ -94,6 +94,29 @@
 **-> Run ```/challenge/run ~/s``` and get the flag** <br>
 <img width="1217" height="657" alt="image" src="https://github.com/user-attachments/assets/fb0957e8-7929-4154-8863-ed396f49446c" /><br><br>
 
+# Comprehending Commands
+## cat: not the pet, but the command!
+### GOAL:
+**There is a file named "flag" in the current directory and we need just to read it.** <br>
+### Soln:
+**-> Run ```ls``` to view the files that are present and run ```cat flag``` to read the content of that file** <br>
+<img width="1197" height="660" alt="image" src="https://github.com/user-attachments/assets/74b879c7-53f2-4299-abc5-c5f34250f36c" /><br><br>
+
+## catting absolute paths
+### GOAL:
+**There is a file named "flag" in a specific directory and we need just to read it but we cant access that file directly..** 
+### Soln:
+**-> Run ```ls``` to view the files that are present and run ```cat /flag``` to read the content of that file as we cant access it directly but can read the content of it** <br>
+<img width="1222" height="455" alt="image" src="https://github.com/user-attachments/assets/af563e74-a9db-42d5-945e-122faa2883b7" /><br><br>
+
+## more catting practice
+### GOAL:
+**In this level, the flag is in some crazy directory, and will not allow us to change directories with "cd", so no cat flag for us. we must retrieve the flag by absolute path, wherever it is...** <br>
+### Soln:
+**-> As there is path being displayed and we can run ```cat ../../path``` and get the flag** <br>
+<img width="1211" height="225" alt="image" src="https://github.com/user-attachments/assets/0873001c-8463-428d-ac25-ed7f4c516ed8" /><br><br>
+
+##
 
 
 
