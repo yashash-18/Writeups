@@ -88,6 +88,8 @@
 **>> Your argument must be an absolute path.** <br>
 **>> The path must be inside your home directory.** <br>
 **>> Before expansion, your argument must be three characters or less..** <br>
+### Soln:
+**-> First check in which directory u are... and if u are not in ```/``` root directory then navigate there using ```cd ../..```** <br>
 
 
 
