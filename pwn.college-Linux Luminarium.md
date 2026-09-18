@@ -84,7 +84,10 @@
 
 ## home sweet home
 ### GOAL:
-**
+**In this challenge, ```/challenge/run``` will write a copy of the flag to any file you specify as an argument on the commandline, with these constraints:** <br>
+**>> Your argument must be an absolute path.** <br>
+**>> The path must be inside your home directory.** <br>
+**>> Before expansion, your argument must be three characters or less..** <br>
 
 
 
