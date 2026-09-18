@@ -66,6 +66,17 @@
 **-> Generally we try to run ```/challenge/run``` in root directory right but as they mentioned about relative path so now try running it with but without ```/```** <br>
 <img width="1197" height="781" alt="image" src="https://github.com/user-attachments/assets/ce512318-9e37-4dd1-af6e-edf1dc88031a" /><br><br>
 
+## Explicit relative paths, from /
+### GOAL:
+**First we need to change our current working directory to ```/``` Then invoke ```/challenge/run``` using a relative path. but For this level, the relative path starts with the letter ```.``` as it is said that explicit relative path** <br>
+### Soln:
+**-> First check in which directory u are... and if u are not in ```/``` root directory then navigate there using ```cd ../..```** <br>
+**-> As they mentioned that the relative path starts with "." now in root directory try running ```./challenge/run``` and get the flag** <br>
+<img width="1211" height="716" alt="image" src="https://github.com/user-attachments/assets/0fef16fb-cd47-4ba5-a972-8570cf0264a4" /><br><br>
+
+## Implicit relative path
+### GOAL:
+**
 
 
 
