@@ -89,7 +89,11 @@
 **>> The path must be inside your home directory.** <br>
 **>> Before expansion, your argument must be three characters or less..** <br>
 ### Soln:
-**-> First check in which directory u are... and if u are not in ```/``` root directory then navigate there using ```cd ../..```** <br>
+**-> First check in which directory u are... and if u are not in ```/home``` directory then navigate there using ```cd ../```** <br>
+**-> And before that just create a file with a single character(any alphabet named file) named in ```/home/hacker``` where u have the access to create a file, as we need to copy the content from ```/challenge/run``` to a file which is less than three characters..** <br>
+**-> Run ```/challenge/run ~/s``` and get the flag** <br>
+<img width="1217" height="657" alt="image" src="https://github.com/user-attachments/assets/fb0957e8-7929-4154-8863-ed396f49446c" /><br><br>
+
 
 
 
