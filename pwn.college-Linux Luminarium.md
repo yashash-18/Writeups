@@ -76,6 +76,14 @@
 
 ## Implicit relative path
 ### GOAL:
+**First we need to change our current working directory to ```/``` Then invoke ```/challenge/run``` , but For this level,  we have to launch run in ```/challenge```** <br>
+### Soln:
+**-> First check in which directory u are... and if u are not in ```/``` root directory then navigate there using ```cd ../..```** <br>
+**-> Now navigate to ```/challenge``` and to run an executable file we use ```./``` so now run ```./run``` and get the flag** <br>
+<img width="1227" height="711" alt="image" src="https://github.com/user-attachments/assets/c9d916ea-85ec-452f-a8bb-32064370c435" /><br><br>
+
+## home sweet home
+### GOAL:
 **
 
 
