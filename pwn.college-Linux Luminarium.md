@@ -116,7 +116,16 @@
 **-> As there is path being displayed and we can run ```cat ../../path``` and get the flag** <br>
 <img width="1211" height="225" alt="image" src="https://github.com/user-attachments/assets/0873001c-8463-428d-ac25-ed7f4c516ed8" /><br><br>
 
-##
+## grepping for a needle in haystack
+### GOAL:
+**In this challenge, I've put a hundred thousand lines of text into the /challenge/data.txt file. grep it for the flag!** <br>
+**HINT: The flag always starts with the text "pwn.college"**
+### Soln:
+**-> Run ```grep pwn.college /challenge/data.txt``` and get the flag** <br>
+**-> We use grep to return the lines that are containing that word** <br> 
+<img width="1226" height="402" alt="image" src="https://github.com/user-attachments/assets/ad0382a0-73f5-4b5d-899c-940453013dcd" /><br><br>
+
+
 
 
 
