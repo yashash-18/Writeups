@@ -125,6 +125,60 @@
 **-> We use grep to return the lines that are containing that word** <br> 
 <img width="1226" height="402" alt="image" src="https://github.com/user-attachments/assets/ad0382a0-73f5-4b5d-899c-940453013dcd" /><br><br>
 
+## comparing files
+### GOAL:
+**In this challenge There are two files in ```/challenge```**
+**>>```/challenge/decoys_only.txt``` contains 100 fake flags** <br>
+**>>```/challenge/decoys_and_real.txt``` contains all 100 fake flags plus the one real flag** <br>
+**We need to Use ```diff``` to find what's different between these files and get your flag!** <br>
+### Soln:
+**-> Navigate to ```/challenge``` and then run ```diff /challenge/decoys_only.txt /challenge/decoys_and_real.txt``` and get the flag** <br>
+<img width="1227" height="660" alt="image" src="https://github.com/user-attachments/assets/e6210f9d-3aa5-45e2-8d8f-afd450246234" /><br><br>
+
+## listing files
+### GOAL:
+**In this challenge, we've named ```/challenge/run``` with some random name! List the files in "/challenge" to find it. Then invoke the discovered absolute path to get the flag.**
+### Soln:
+**-> Navigate to ```/challenge``` and list the files present in it using ```ls``` and then execute that file using ```./```** <br>
+<img width="1196" height="676" alt="image" src="https://github.com/user-attachments/assets/fcb9df0b-dccf-4fb2-95e1-ef091f3beb4a" /><br><br>
+
+## touching files
+### GOAL:
+**In this challenge we need to create two files: ```/tmp/pwn``` and ```/tmp/college```, and run ```/challenge/run``` to get the flag!**
+### Soln:
+**-> Just create two files in the ```/tmp``` directory using ```touch``` command and then run ```/challenge/run``` to get the flag** <br>
+<img width="1195" height="507" alt="image" src="https://github.com/user-attachments/assets/2d7751b7-115e-4e46-99ae-8628d8935f1d" /><br><br>
+
+## removing files
+### GOAL:
+**This challenge will create a "delete_me" file in your home directory! Delete it, then run ```/challenge/check```, which will make sure you've deleted it and then give you the flag!** 
+### Soln:
+**-> Run ```rm delete_me``` and then execute ```/challenge/check``` to get the flag** <br>
+<img width="1202" height="601" alt="image" src="https://github.com/user-attachments/assets/7cf9e658-d0da-44e7-995c-b3b97950adf8" /><br><br>
+
+## moving files
+### GOAL:
+**We need to move the file ```/flag``` to a specific path mentioned ```/tmp/hack-the-planet```** <br>
+### Soln:
+**-> Run ```mv /flag /tmp/hack-the-planet``` and then execute ```/challenge/check``` to get the flag** <br>
+<img width="1217" height="627" alt="image" src="https://github.com/user-attachments/assets/7e34bc30-cf22-435c-8ce2-b3931fe2fb73" /><br><br>
+
+## copying files
+### GOAL:
+**This challenge wants you to copy the ```/flag``` file to ```/tmp/hack-the-planet```** 
+### Soln:
+**-> Run ```cp /flag /tmp/hack-the-planet``` and then execute ```/challenge/check``` to get the flag** <br>
+<img width="1200" height="405" alt="image" src="https://github.com/user-attachments/assets/7100e273-9cd4-4fa9-8eae-33c5258d73d0" /><br><br>
+
+## hidden files
+
+
+
+
+
+
+
+
 
 
 
