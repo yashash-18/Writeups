@@ -44,6 +44,23 @@
 **-> After inserting ```http://127.1/Admin``` it return ```200 ok``` and we can observe the admin interface.. and now insert ```http://127.1/Admin/delete?username=carlos```** <br>
 **-> The user got deleted and the lab is solved✅** <br><br>
 
+## LAB-4: SSRF with filter bypass via open redirection vulnerability
+### GOAL:
+**To solve the lab, we need to change the stock check URL to access the admin interface at ```http://192.168.0.12:8080/admin``` and delete the user ```carlos```**<br>
+**Our main goal is to find the redirect endpoint that lets you control where the local application sends the request** 
+### Soln:
+<img width="1292" height="342" alt="image" src="https://github.com/user-attachments/assets/f336c5b8-68d4-46b6-9ed3-40b3f39923f0" /><br>
+**-> After accessing the lab view details of either of the item and we can see a option like ```check stock``` which fetches data from an internal system.** <br>
+**-> Now copy the request and inspect it in the "burpsuite" and now try checking for the redirect endpoint to place our url** <br>
+**-> There is a option beside of check stock named "next product"..** <br>
+<img width="1166" height="472" alt="image" src="https://github.com/user-attachments/assets/ea6fc15e-e45f-47fd-a57f-d045e490b704" /><br>
+**-> If we inspect that in burpsuite and found the endpoint as ```/product/nextproduct?path=http://url** <br>
+**-> Now try it with the given url and it return "200 Ok" now try deleting the user ```carlos``` where path is ```/product/nextproduct?path=http://192.168.0.12:8080/admin/delete?username=carlos```** <br>
+**-> The user got deleted and the lab is solved✅** <br><br>
+
+
+
+
 
 
 
