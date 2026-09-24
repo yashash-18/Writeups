@@ -54,7 +54,7 @@
 **-> Now copy the request and inspect it in the "burpsuite" and now try checking for the redirect endpoint to place our url** <br>
 **-> There is a option beside of check stock named "next product"..** <br>
 <img width="1166" height="472" alt="image" src="https://github.com/user-attachments/assets/ea6fc15e-e45f-47fd-a57f-d045e490b704" /><br>
-**-> If we inspect that in burpsuite and found the endpoint as ```/product/nextproduct?path=http://url** <br>
+**-> If we inspect that in burpsuite and found the endpoint as ```/product/nextproduct?path=http://url```** <br>
 **-> Now try it with the given url and it return "200 Ok" now try deleting the user ```carlos``` where path is ```/product/nextproduct?path=http://192.168.0.12:8080/admin/delete?username=carlos```** <br>
 **-> The user got deleted and the lab is solved✅** <br><br>
 
