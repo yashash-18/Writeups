@@ -37,6 +37,12 @@
 <img width="782" height="331" alt="image" src="https://github.com/user-attachments/assets/5084ff3a-daf6-4f82-a9d2-e029d6c754f4" /><br>
 **-> Delete the user ```carlos``` and lab is solved✅** <br><br>
 
+## LAB-4: User role can be modified in user profile
+### GOAL:
+**This lab has an admin panel at ```/admin``` It's only accessible to logged-in users with a "roleid of 2"** <br>
+**To Solve the lab by accessing the admin panel and using it to delete the user ```carlos``` and log in to your own account using the following credentials: ```wiener:peter```** <br>
+### Soln:
+
 
 
 
