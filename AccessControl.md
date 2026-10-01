@@ -20,7 +20,7 @@
 **-> Access the lab and as they mentioned that the location is disclosed somewhere in the application, so try inspecting the page source to retrive any information** <br>
 <img width="627" height="212" alt="image" src="https://github.com/user-attachments/assets/b4afbbc0-3b26-4749-9900-1f068fc36225" /><br>
 **-> Found a path and now try navigating there explore it** <br>
-<img width="891" height="326" alt="image" src="https://github.com/user-attachments/assets/a49c920d-eb8f-44f3-b89c-54553828a847" />
+<img width="891" height="326" alt="image" src="https://github.com/user-attachments/assets/a49c920d-eb8f-44f3-b89c-54553828a847" /><br>
 **-> Delete the user ```carlos``` and the lab is solved✅** <br><br>
 
 ## LAB-3: User role controlled by request parameter
