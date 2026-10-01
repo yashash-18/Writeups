@@ -28,9 +28,10 @@
 **This lab has an admin panel at ```/admin```, which identifies administrators using a forgeable cookie.**<br>
 **To Solve the lab delete the user ```carlos``` and log in to your own account using the following credentials: ```wiener:peter```** 
 ### Soln:
+<img width="990" height="411" alt="image" src="https://github.com/user-attachments/assets/a8ab73b8-2a3b-49d1-b136-47c615a86643" /><br>
 **-> Access the lab and log in to your acc with the given credentials** <br>
 **-> Now inspect the page and view all the cookies as they mentioned that there is a forgeable cookie which identifies administrators** <br>
-**-> Initially for the key "Admin" it is "false" as we can modify it now change it to "True" and explore that in a new tab** ,br>
+**-> Initially for the key "Admin" it is "false" as we can modify it now change it to "True" and explore that in a new tab** <br>
 <img width="1630" height="392" alt="image" src="https://github.com/user-attachments/assets/34341dfe-2617-432d-a124-11b7b6968f1d" /><br>
 **->Got the admin panel after adding the ```/admin``` to that url** <br>
 <img width="782" height="331" alt="image" src="https://github.com/user-attachments/assets/5084ff3a-daf6-4f82-a9d2-e029d6c754f4" /><br>
