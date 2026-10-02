@@ -47,6 +47,7 @@
 **-> Now click on admin panel and send it to repeater and then as mentioned that front-end system has been configured to block external access to that path, so now place the header ```X-Original-URL:/admin``` and check the response of it..** <br>
 <img width="1566" height="560" alt="image" src="https://github.com/user-attachments/assets/a72ccc68-8b14-495f-96b5-823ed86721e6" /><br>
 **-> Now when we try to delete the user from the header itself the response says that missing parameter which means it isn't defined here so lets try to give ```?username=carlos```in the main query and ```/admin/delete``` in the header** <br>
+<img width="1052" height="362" alt="image" src="https://github.com/user-attachments/assets/05844ed8-51b0-4f0c-8416-9b466326bfd9" /><br>
 **-> Delete the user ```carlos``` and lab is solved✅** <br><br>
 
 
