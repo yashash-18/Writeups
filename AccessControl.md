@@ -37,11 +37,17 @@
 <img width="782" height="331" alt="image" src="https://github.com/user-attachments/assets/5084ff3a-daf6-4f82-a9d2-e029d6c754f4" /><br>
 **-> Delete the user ```carlos``` and lab is solved✅** <br><br>
 
-## LAB-4: User role can be modified in user profile
+## LAB- 5: URL-based access control can be circumvented
 ### GOAL:
-**This lab has an admin panel at ```/admin``` It's only accessible to logged-in users with a "roleid of 2"** <br>
-**To Solve the lab by accessing the admin panel and using it to delete the user ```carlos``` and log in to your own account using the following credentials: ```wiener:peter```** <br>
+**This website has an unauthenticated admin panel at ```/admin```, but a front-end system has been configured to block external access to that path. However, the back-end application is built on a framework that supports the ```X-Original-URL``` header** <br>
+**To solve the lab, access the admin panel and delete the user ```carlos```** <br>
 ### Soln:
+<img width="1036" height="452" alt="image" src="https://github.com/user-attachments/assets/683908cf-3639-4a0d-a926-dcc19c9e8933" /><br>
+**-> Access the lab and inspect this in burpsuite** <br>
+**-> Now click on admin panel and send it to repeater and then as mentioned that front-end system has been configured to block external access to that path, so now place the header ```X-Original-URL:/admin``` and check the response of it..** <br>
+<img width="1566" height="560" alt="image" src="https://github.com/user-attachments/assets/a72ccc68-8b14-495f-96b5-823ed86721e6" /><br>
+**-> Now when we try to delete the user from the header itself the response says that missing parameter which means it isn't defined here so lets try to give ```?username=carlos```in the main query and ```/admin/delete``` in the header** <br>
+**-> Delete the user ```carlos``` and lab is solved✅** <br><br>
 
 
 
