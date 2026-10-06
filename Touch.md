@@ -8,6 +8,7 @@
 **-After that by sending the curl request found the serial number which acts as the password to the Nexion Docreader** <br>
 ```
 curl -i http://10.129.147.139:8443/api/status
+
 HTTP/1.1 200 OK
 Transfer-Encoding: chunked
 Content-Type: application/json
