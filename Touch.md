@@ -6,7 +6,8 @@
 **-Run ```ffuf -u https://touch.htb:8443/FUZZ -w /usr/share/seclists/Discovery/Web-Content/raft-small-words.txt -k```** <br>
 **-After the run we will get many endpoints now check for the status other than 302 and found an endpoint ```/api``` and agin using this try again to find one more end point and then found ```/api/status/```** <br>
 **-After that by sending the curl request found the serial number which acts as the password to the Nexion Docreader** <br>
-```curl -i http://10.129.147.139:8443/api/status
+```
+curl -i http://10.129.147.139:8443/api/status
 HTTP/1.1 200 OK
 Transfer-Encoding: chunked
 Content-Type: application/json
