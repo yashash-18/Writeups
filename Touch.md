@@ -1,11 +1,11 @@
 # Touch
 ### Nmap Scan
 <img width="552" height="171" alt="image" src="https://github.com/user-attachments/assets/375a57e9-5b5f-4e48-8734-85ca699f80af" /><br>
-**-Found few open ports and services running.** <br>
-**-After many attempts of approaching then tried endpoint enumeration using ```ffuf```** <br>
-**-Run ```ffuf -u https://touch.htb:8443/FUZZ -w /usr/share/seclists/Discovery/Web-Content/raft-small-words.txt -k```** <br>
-**-After the run we will get many endpoints now check for the status other than 302 and found an endpoint ```/api``` and agin using this try again to find one more end point and then found ```/api/status/```** <br>
-**-After that by sending the curl request found the serial number which acts as the password to the Nexion Docreader** <br>
+**-Found few open ports and services running.** 
+**-After many attempts of approaching then tried endpoint enumeration using ```ffuf```** 
+**-Run ```ffuf -u https://touch.htb:8443/FUZZ -w /usr/share/seclists/Discovery/Web-Content/raft-small-words.txt -k```**
+**-After the run we will get many endpoints now check for the status other than 302 and found an endpoint ```/api``` and agin using this try again to find one more end point and then found ```/api/status/```** 
+**-After that by sending the curl request found the serial number which acts as the password to the Nexion Docreader**
 ```
 curl -i http://10.129.147.139:8443/api/status
 
@@ -18,5 +18,11 @@ Access-Control-Allow-Methods: GET, POST, PUT, OPTIONS
 Access-Control-Allow-Headers: Content-Type
 Date: Wed, 07 Oct 2026 23:44:38 GMT
 
-{"device":"Nexion DeviceHub DH-100","serial":"NX-DH-2024-B7042","firmware":"1.4.2","status":"online","uptime":85478}%  ```
+{"device":"Nexion DeviceHub DH-100","serial":"NX-DH-2024-B7042","firmware":"1.4.2","status":"online","uptime":85478}%
+```
+**-> After login found the creds of a user and there are few features like scanner, printer, and also there's an upload option**
+<img width="812" height="467" alt="image" src="https://github.com/user-attachments/assets/3b19ba32-f5b4-4d4f-94c4-66a7a62f7002" /><br>
+**-> With those creds now try to log in to RDP** 
+
+
 
