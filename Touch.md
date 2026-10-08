@@ -22,7 +22,11 @@ Date: Wed, 07 Oct 2026 23:44:38 GMT
 ```
 **-> After login found the creds of a user and there are few features like scanner, printer, and also there's an upload option**
 <img width="812" height="467" alt="image" src="https://github.com/user-attachments/assets/3b19ba32-f5b4-4d4f-94c4-66a7a62f7002" /><br>
-**-> With those creds now try to log in to RDP** 
+**-> With those creds try to log in to RDP, and found Successfully logged into RDP** <br>
+<img width="1857" height="796" alt="image" src="https://github.com/user-attachments/assets/8ac904a7-e842-496a-88eb-98b36babbd23" /><br>
+**-> After explorin everything ** <br>
+
+
 
 
 
