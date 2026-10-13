@@ -49,6 +49,9 @@
     </FlightLeg>
 </IATA_AIDX_FlightLegNotifRQ>'
 ```
+**-> Got the response as** <br>
+<img width="592" height="336" alt="image" src="https://github.com/user-attachments/assets/47b5a1c1-1f95-4d32-9eb3-13d14095a8f6" /><br>
+**-> 
 
 
 
