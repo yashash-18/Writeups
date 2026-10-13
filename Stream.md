@@ -51,7 +51,10 @@
 ```
 **-> Got the response as** <br>
 <img width="592" height="336" alt="image" src="https://github.com/user-attachments/assets/47b5a1c1-1f95-4d32-9eb3-13d14095a8f6" /><br>
-**-> 
+**-> Then when we send a request from ```GET /health``` got the response as** <br>
+<img width="772" height="112" alt="image" src="https://github.com/user-attachments/assets/d66b4b14-0f27-4602-9db9-fa80d1b86e79" /><br>
+
+
 
 
 
