@@ -6,5 +6,8 @@
 <img width="622" height="326" alt="image" src="https://github.com/user-attachments/assets/e031c6bc-91a1-4091-a0d9-a8ca5ba0c513" /><br>
 **-> So i checked for any endpoints by running the dirsearch, for ```port 80``` but couldn't get one** <br>
 **-> Tried dirsearch for ```port 8081``` and found few paths** <br>
+<img width="1422" height="361" alt="image" src="https://github.com/user-attachments/assets/68f22fdd-9a01-4cd0-a0be-df856f6fc236" /><br>
+
+
 
 
