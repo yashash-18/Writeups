@@ -53,6 +53,9 @@
 <img width="592" height="336" alt="image" src="https://github.com/user-attachments/assets/47b5a1c1-1f95-4d32-9eb3-13d14095a8f6" /><br>
 **-> Then when we send a request from ```GET /health``` got the response as** <br>
 <img width="772" height="112" alt="image" src="https://github.com/user-attachments/assets/d66b4b14-0f27-4602-9db9-fa80d1b86e79" /><br>
+**-> Tried dirsearch and found few paths including sub-domain** <br>
+<img width="931" height="421" alt="image" src="https://github.com/user-attachments/assets/340d58bb-3604-4ab7-a908-4ccb70f55f35" /><br>
+
 
 
 
